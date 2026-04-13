@@ -953,7 +953,7 @@ pub const CAKE_QDISC_ESTIMATED_MEMORY_BYTES: u64 = 512 * 1024;
 /// Minimum memory headroom Bakery tries to leave unused after a projected or in-flight apply.
 pub const BAKERY_MEMORY_GUARD_MIN_AVAILABLE_BYTES: u64 = 768 * 1024 * 1024;
 /// Maximum number of mapped circuits allowed without Insight.
-const DEFAULT_MAPPED_CIRCUITS_LIMIT: usize = 1000;
+const DEFAULT_MAPPED_CIRCUITS_LIMIT: usize = 10000;
 /// Minimum interval between repeated mapped-circuit-limit urgent issues.
 const CIRCUIT_LIMIT_URGENT_INTERVAL_SECONDS: u64 = 30 * 60;
 /// Last timestamp at which we emitted a mapped-circuit-limit urgent issue.
